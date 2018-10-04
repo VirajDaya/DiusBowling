@@ -20,7 +20,7 @@ class FrameTest {
 
     @Test
     @DisplayName("Two Rolls less than 10 should not make the Frame a Spare")
-    void rollLessThan10ShouldNotMarkAsSpare() throws Exception{
+    void rollLessThan10ShouldNotMarkAsSpare() throws Exception {
         this.notLastFrame.setRoll(4);
         this.notLastFrame.setRoll(5);
         assertFalse(this.notLastFrame.isSpare());
@@ -29,7 +29,7 @@ class FrameTest {
 
     @Test
     @DisplayName("Two Rolls equal to 10 pins should make the Frame a Spare")
-    void twoRollsTotal10ShouldMarkAsSpare() throws Exception{
+    void twoRollsTotal10ShouldMarkAsSpare() throws Exception {
         this.notLastFrame.setRoll(5);
         this.notLastFrame.setRoll(5);
         assertTrue(this.notLastFrame.isSpare());
@@ -38,7 +38,7 @@ class FrameTest {
 
     @Test
     @DisplayName("Rolling 10 on first roll should mark the Frame a Strike")
-    void roll10OnFirstRollShouldMarkAsStrike() throws Exception{
+    void roll10OnFirstRollShouldMarkAsStrike() throws Exception {
         this.notLastFrame.setRoll(10);
         assertTrue(this.notLastFrame.isStrike());
         assertFalse(this.notLastFrame.isSpare());

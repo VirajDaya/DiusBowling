@@ -55,7 +55,7 @@ class DiusBowlingGameTest {
     @Test
     @DisplayName("Rolling 10 strikes should return maximum game score")
     void roll10StrikesShouldScore300() throws Exception {
-        this.runRoll(10,10);
+        this.runRoll(10, 10);
         assertEquals(300, this.testGame.score());
     }
 

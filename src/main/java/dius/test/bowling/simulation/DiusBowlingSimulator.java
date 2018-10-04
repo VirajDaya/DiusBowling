@@ -30,7 +30,7 @@ class DiusBowlingSimulator {
                                         e.printStackTrace();
                                     }
                                 });
-                    System.out.println("Total Score : " + game.score());
+                        System.out.println("Total Score : " + game.score());
                     });
         } catch (Exception e) {
             e.printStackTrace();
